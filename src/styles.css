@@ -1,0 +1,99 @@
+body {
+  background-color: #191c21;
+  color: white;
+}
+
+h1 {  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5em;
+}
+
+h2 {  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4em;
+}
+
+h3 {  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+}
+
+h4 {  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
+
+h5 {  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+}
+
+
+/* Move the below to a helper.css when styles are organised */
+.padding-none {
+  padding: 0;
+}
+
+.padding-small {
+  padding: 1.5%;
+}
+
+.padding-standard {
+  padding: 2.5%;
+}
+
+.padding-large {
+  padding: 5%;
+}
+
+.padding-bottom-none {
+  padding-bottom: 0;
+}
+
+.padding-top-none {
+  padding-top: 0;
+}
+
+.padding-right-none {
+  padding-right: 0;
+}
+
+.padding-left-none {
+  padding-left: 0;
+}
+
+.margin-none {
+  padding: 0;
+}
+
+.margin-small {
+  margin: 1.5%;
+}
+
+.margin-standard {
+  margin: 2.5%;
+}
+
+.margin-large {
+  margin: 5%;
+}
+
+.margin-bottom-none {
+  padding-bottom: 0;
+}
+
+.margin-top-none {
+  padding-top: 0;
+}
+
+.margin-right-none {
+  padding-right: 0;
+}
+
+.margin-left-none {
+  padding-left: 0;
+}
+
+.capitalise:first-letter {
+   text-transform: capitalize;
+}
