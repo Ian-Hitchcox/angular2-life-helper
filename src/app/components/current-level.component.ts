@@ -26,34 +26,35 @@ const PERCENT_LIMITS = {
   template: `<tr className="current-level" *ngIf="level">
               
                 <td>
-                  <img width="50%" height="10%" class="level-image"src="{{level.imageUrl}}" />
+                    <img width="50%" height="10%" class="level-image"src="{{level.imageUrl}}" />
                 </td>
 
                 <td>
-                  <span class="padding-standard level-name capitalise">
-                    {{level.name}}
-                  </span>
+                    <span class="padding-standard level-name capitalise">
+                        {{level.name}}
+                    </span>
                 </td>
 
                 <td>
-                  <span class="padding-standard">
-                    
-                    <span class="degrade-rate">
-                      -{{level.degradeRate | percent}}
-                    </span>                 
-                    Per Hour
-                  </span>
+                    <span class="padding-standard">
+                        
+                        <span class="degrade-rate">
+                        -{{level.degradeRate | percent}}
+                        </span>                 
+                        Per Hour
+                    </span>
                 </td>
 
                 <td>
-                  <span class="padding-standard current-percent">
-                      {{level.currentPercent | percent:'2.2-2'}}
-                  </span>                
+                    <span class="padding-standard current-percent">
+                        {{level.currentPercent | percent:'2.2-2'}}
+                    </span>                
                 </td>
 
                 <td>
-                  <input [(ngModel)]="addAmount" />
-                  <button (click)="AddToLevel(level, addAmount)">+</button>
+                    <button mat-raised-button>Basic</button>
+                    <input [(ngModel)]="addAmount" />
+                    <button (click)="AddToLevel(level, addAmount)">+</button>
                 </td>
             </tr>               
             

@@ -47,13 +47,13 @@ var AppComponent = (function () {
             var newMap_1 = new Map();
             // Apply the correct rate of degradation from our last visit.
             curConfig['levels'].forEach(function (value, name) {
-                var updatedPercent = _this.ApplyDegradationSinceLastVisit(.15, value, curConfig['lastVisit']);
-                // Store new value in our temporary map
-                newMap_1.set(name, updatedPercent);
                 // Find same level in LEVELS array
                 var levelIndex = _this.levels.findIndex(function (level, i) {
                     return level.name === name;
                 });
+                var updatedPercent = _this.ApplyDegradationSinceLastVisit(_this.levels[levelIndex].degradeRate, value, curConfig['lastVisit']);
+                // Store new value in our temporary map
+                newMap_1.set(name, updatedPercent);
                 // Update its current percent
                 _this.levels[levelIndex].currentPercent = updatedPercent;
             });

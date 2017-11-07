@@ -1,7 +1,6 @@
 import { 
     Component,
-    Input,
-    OnInit
+    Input
 } from '@angular/core';
 
 import { HelpBlock } from '../classes/Help-Block';
@@ -28,14 +27,7 @@ import { HelpBlock } from '../classes/Help-Block';
     
     `]
 })
-export class HelpBlockComponent implements OnInit  {   
+export class HelpBlockComponent  {   
   @Input() helpBlock: HelpBlock;
-
-  ngOnInit() {
-
-      // Not yet implemented
-    
-  }
-
-  
+ 
 }

@@ -134,15 +134,15 @@ export class AppComponent implements OnInit {
             // Apply the correct rate of degradation from our last visit.
             curConfig['levels'].forEach((value: number, name: string) => {                
                 
-                let updatedPercent = this.ApplyDegradationSinceLastVisit(.15, value, curConfig['lastVisit']);
-                
-                // Store new value in our temporary map
-                newMap.set(name, updatedPercent);
-
                 // Find same level in LEVELS array
                 let levelIndex = this.levels.findIndex((level: Level, i: number): boolean => {
                     return level.name === name;
                 });
+                
+                let updatedPercent = this.ApplyDegradationSinceLastVisit(this.levels[levelIndex].degradeRate, value, curConfig['lastVisit']);
+                
+                // Store new value in our temporary map
+                newMap.set(name, updatedPercent);
 
                 // Update its current percent
                 this.levels[levelIndex].currentPercent = updatedPercent;

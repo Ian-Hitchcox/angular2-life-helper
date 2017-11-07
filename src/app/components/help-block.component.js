@@ -13,9 +13,6 @@ var Help_Block_1 = require("../classes/Help-Block");
 var HelpBlockComponent = (function () {
     function HelpBlockComponent() {
     }
-    HelpBlockComponent.prototype.ngOnInit = function () {
-        // Not yet implemented
-    };
     return HelpBlockComponent;
 }());
 __decorate([
