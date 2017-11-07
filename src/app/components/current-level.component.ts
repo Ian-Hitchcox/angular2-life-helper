@@ -31,7 +31,7 @@ const PERCENT_LIMITS = {
 
                 <td>
                     <span class="padding-standard level-name capitalise">
-                        {{level.name}}
+                        {{level.name | titlecase}}
                     </span>
                 </td>
 
