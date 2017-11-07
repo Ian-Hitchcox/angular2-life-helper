@@ -51,8 +51,7 @@ const PERCENT_LIMITS = {
                     </span>                
                 </td>
 
-                <td>
-                    <button mat-raised-button>Basic</button>
+                <td>                    
                     <input [(ngModel)]="addAmount" />
                     <button (click)="AddToLevel(level, addAmount)">+</button>
                 </td>
