@@ -52,7 +52,7 @@ const PERCENT_LIMITS = {
                 </td>
 
                 <td>                    
-                    <input [(ngModel)]="addAmount" />
+                    <input class="level-input-button" [(ngModel)]="addAmount" />
                     <button (click)="AddToLevel(level, addAmount)">+</button>
                 </td>
             </tr>               
@@ -93,8 +93,16 @@ const PERCENT_LIMITS = {
       width: 20%;
     }
 
+    level-input {
+        border-radius: 1.5%;
+        width: 40%;
+    }
+
     button {      
       width: 20%;
+      border-radius: 100%;
+      background-color: #dce288;
+      outline: none;
     }
     
     `]
