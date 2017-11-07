@@ -15,8 +15,6 @@ var http_1 = require("@angular/http");
 var app_component_1 = require("./components/app.component");
 var current_level_component_1 = require("./components/current-level.component");
 var help_block_component_1 = require("./components/help-block.component");
-// Pipes
-var map_values_pipe_1 = require("./pipes/map-values-pipe");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,8 +31,7 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             current_level_component_1.CurrentLevelComponent,
-            help_block_component_1.HelpBlockComponent,
-            map_values_pipe_1.MapValuesPipe
+            help_block_component_1.HelpBlockComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })
